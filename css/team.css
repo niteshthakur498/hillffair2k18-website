@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	transition: all 0.3s ease;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+ 	font-family: Carson, 'Trebuchet MS', sans-serif;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+.container{
+	position: absolute;
+	min-height: 100%;
+	width: 100%;
+	display: block;
+	text-align:center;
+	/*background-image: url('../images/backg.png');
+	background-attachment: fixed;
+	background-size: contain;
+	color: #fff;*/
+	padding: 8% 0% 8%;
+}
+.heading{
+	font-size: 2em;
+	font-family: Montserrat;
+	font-weight: 700;
+}
+
+.group{
+	margin: 60px auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.user{
+	height: 300px;
+	width: 230px;
+	border-radius: 3px;
+	display: flex;
+	flex-direction: column;
+	 box-shadow: 0px 2px 5px rgba(0,0,0,0.6);
+	 position: relative;
+	 overflow: hidden;
+	 cursor: pointer;
+	 color: white;
+	 margin: 20px 20px 50px ;
+}
+.userImage{
+	height: 170px;
+	width: 170px;
+	display: inline-block;
+	position: relative;
+	margin: auto;
+	z-index: 1;
+	transition: all 0.3s linear 0s;
+}
+.user .userImage::before{
+	content: "";
+	width: 100%;
+	background:rgba(159, 1, 234,0.8);
+	position: absolute;
+	bottom: 135%;
+	right: 0;
+	left: 0;
+	transform: scale(3);
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out 0s;
+	height: 100%;
+}
+.user .userImage::after{
+	content: "";
+	width: 100%;
+	height: 100%;
+	background:rgba(159, 1, 234,1);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.userImage img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	transform: scale(1);
+	transition: all 0.3s linear;
+	box-shadow: 0 0 0 10px #f7f5e7;/*Yes*/
+	transform: scale(0.8);
+}
+
+.userData{
+	height: 30%;
+	padding: 20px 0px;
+    transition: all 0.3s linear;
+    background: linear-gradient(rgba(159, 1, 234,01),rgba(159, 1, 234,0.7));
+}
+.userName{
+	font-family: Montserrat;
+	font-size: 1.20em;
+	font-weight: 700;
+}
+.userPost{
+	font-family: Lato;
+	font-size: 1.05em;
+}
+.userContact{
+	font-family: Lato;
+	font-size: 0.9em;
+
+	font-weight: lighter;
+}
+
+/*/*/*/*/*.user:hover  .userImage::before{
+		height: 100%;/*Yes*/
+}
+/*.user:hover  .userImage img{
+		box-shadow: 0 0 0 10px #f7f5e7;/*Yes*/
+		transform: scale(0.8);/*Yes*/
+}*/*/*/*/
+*/*/

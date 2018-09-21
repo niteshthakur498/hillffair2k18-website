@@ -1,0 +1,183 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/registerPage.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="sub-container">
+
+      <div class="sub info">
+        <div class="side-content">
+          <div class="logos">
+            <img src="images/logo2k17.png" class="hillffair">
+            <img src="images/nith.png" class="nith">
+          </div>
+          <div class="name-dates">
+            <h1 id="heading">Hillffair 2k'18</h1>
+            <!-- <h2 id="theme">Theme</h2>
+            <h3 id="tagline">Tagline Tagline Tagline</h3> -->
+            <h2 class="hillffairDate">Dates-Here</h2>
+          </div>
+          <div class="text-content">
+            Be a part of one of the biggest cultural Fests of Northren India.
+          </div>
+          <div class="links">
+            <span><a href="https://www.facebook.com/festnimbus/"><i class="fa fa-facebook"></i></a></span>
+            <span><a href="https://www.instagram.com/pixonoids/"><i class="fa fa-instagram"></i></a></span>
+            <span><a href="https://www.youtube.com/pixonoids"><i class="fa fa-youtube"></i></a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub formContent">
+        <div class="aboveFormContent">
+          <div class="logos">
+            <img src="images/logo2k17.png" class="hillffair">
+            <img src="images/nith.png" class="nith">
+          </div>
+          <div class="name-dates">
+            <h1 id="heading">Hillffair 2k'18</h1>
+            <h2 class="hillffairDate">Dates-Here</h2>
+          </div>
+        </div>
+        <div class="confirm">
+          <h2>You are Registered Successfully.</h2>
+        </div>
+        <form class="contactForm" id="regForm" method="POST" action="/adduser">
+          <div class="formField required">
+            <label for="name" class="textfieldLabel">Name</label> 
+            <input type="text" name=" name" id="name" class="textfieldInput">
+            <div class="invalid-message"></div>
+          </div>
+
+          <div  class="formField required">
+            <label for="team" class="textfieldLabel">Team</label> 
+            <input type="text" name="team" id="team" class="textfieldInput">
+            <div class="invalid-message"></div>
+          </div>
+
+          <div class="formField phone-mail">
+            <div class="email required">
+              <label for="email" class="textfieldLabel">Email</label> 
+              <input type="text" name="email" id="email" class="textfieldInput">
+              <div class="invalid-message"></div>
+            </div>
+            <div class="phone required">
+              <label for="phone" class="textfieldLabel">Phone Number</label> 
+              <input type="text" name="phone" id="phone" class="textfieldInput">
+              <div class="invalid-message"></div>
+            </div>
+          </div>
+          
+          <div class="formField college-city">
+            <div class="college required">
+              <label for="college" class="textfieldLabel">College</label> 
+              <input type="text" name="college" id="college" class="textfieldInput">
+              <div class="invalid-message"></div>
+            </div>
+          
+            <div class="city required">
+              <label for="city" class="textfieldLabel">City</label> 
+              <input type="text" name="city" id="city" class="textfieldInput">
+              <div class="invalid-message"></div>
+            </div>
+          </div>
+          
+          <div class="formField required">
+            <label for="event" class="textfieldLabel">Reason for Register</label>
+            <select id="eventsOpt" name="event" class="eventOption">
+              <option value disabled selected></option>
+              <option value="Attend Festival">Only Attend</option>
+              <option value="Battle of Bands">Battle of Bands</option>
+              <option value="Battle of Dance">Battle of Dance</option>
+            </select>
+            <div class="invalid-message"></div>
+          </div>
+          
+          <!-- <div class="formField">
+            <label for="message" class="textfieldLabel">Message</label> 
+            <textarea></textarea>
+          </div> -->
+          <input type="submit" name="submit" class="formSubmit" id="submitButton">
+
+        </form>
+        <div class="links form-links">
+            <span><a href="https://www.facebook.com/festnimbus/"><i class="fa fa-facebook"></i></a></span>
+            <span><a href="https://www.instagram.com/pixonoids/"><i class="fa fa-instagram"></i></a></span>
+            <span><a href="https://www.youtube.com/pixonoids"><i class="fa fa-youtube"></i></a></span>
+          </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/registerPage.js"></script>
+</body>
+</html>
+
+
+<!-- <form class="page-content contact-form" name="contact_form" id="contact_form" novalidate>
+
+          <div class="styled-input name required">
+            <input type="text" name="name"/>
+            <label>Name*</label>
+            <div class="invalid-message"></div>
+            <span></span>
+          </div>
+          <div class="styled-input phone-mail">
+            <div class="email required">
+              <input type="email" name="email"/>
+              <label>Email*</label>
+              <div class="invalid-message"></div>
+              <span></span>
+            </div>
+            <div class="phone required">
+              <input type="number" name="phone"/>
+              <label>Phone*</label>
+              <div class="invalid-message"></div>
+              <span></span>
+            </div>
+          </div>
+          <div class="styled-input org-reason">
+            <div class="org required">
+              <input type="text" name="organisation"/>
+              <label>Organisation*</label>
+              <div class="invalid-message"></div>
+              <span></span>
+            </div>
+            <div class="reason">
+              <select name="reason">
+                <option value disabled selected></option>
+                <option value="Public Relations">Public Relations</option>
+                <option value="Sponsorship and Marketing">Sponsorship and Marketing</option>
+                <option value="Events">Events</option>
+                <option value="Star Nights">Star Nights</option>
+                <option value="Other">Other</option>
+              </select>
+              <label>Contact Reason*</label>
+              <span></span>
+            </div>
+          </div>
+          <div class="styled-input other-reason required">
+            <input type="text" name="reason_specify"/>
+            <label>Specify reason*</label>
+            <div class="invalid-message"></div>
+            <span></span>
+          </div>
+          <div class="styled-input message-field required">
+            <textarea required name="message"></textarea>
+            <label>Message*</label>
+            <div class="invalid-message"></div>
+            <span></span>
+          </div>
+          <div class="captcha">
+            <div class="captcha-message"></div>
+            <div class="g-recaptcha" data-sitekey="6LdDLl4UAAAAAGASklggtwNzUreH6bzgzLdIh7P8"></div>
+          </div>
+          <input type="submit" class="form-submit" id="submit" value="submit"/>
+        <p class="form_message">Thank you for the response</p>
+      </form> -->
