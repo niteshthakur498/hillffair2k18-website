@@ -67,6 +67,7 @@ a{
 	margin-bottom: 20px;
 	font-size: 3em;
 	transition: all 0.9s ease 0.3s;
+	text-shadow: 2px 2px 4px #000000;
 }
 .fp-viewing-1 #about-heading{
 	margin-left: 0px;
@@ -76,7 +77,7 @@ a{
 	font-family: lato;
 	font-size: 1.3em;
 	margin-bottom: 25px;
-	line-height: 30px;
+	line-height: 1.3rem;
 }
 .about p{
 	transform: translateX(100px);
@@ -85,6 +86,7 @@ a{
 .fp-viewing-1 .about p{ 
 	transform: translateX(0px);
 	opacity: 1;
+	text-shadow: 1.5px 1.5px 4px #000000;
 }
 #brochure{
 	text-transform: uppercase;
@@ -142,6 +144,11 @@ a{
 .themeContent{
 	font-family: lato;
 	color: #fff;
+	transform: translateY(150px);
+	transition: all 1.3s ease;
+}
+.fp-viewing-2 .themeContent{
+	transform: translateY(0px);
 }
 .themeContent h1{
 	font-family: Montserrat;
@@ -157,7 +164,8 @@ a{
 .theme p{
 	font-size: 1em;
 	text-transform: uppercase;
-	line-height: 1.6em
+	line-height: 1.4em;
+	text-shadow: 1.5px 1.5px 4px #000000;
 }
 .theme{
 	width: 50%;
@@ -301,7 +309,7 @@ a{
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-	bottom: 5px;
+	bottom: 14px;
 }
 @media(max-width: 768px){
 	.followMenu{
@@ -341,12 +349,13 @@ a{
 	position: fixed;
     left: 50%;
     z-index: 3;
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     transition: transform .3s ease,opacity .3s ease;
     bottom: 3px;
-    transform: rotate(90deg);
+    transform: translateX(-50%) rotate(90deg);
 }
 .fp-viewing-4 .arrow{
 	display: none;
 }
+

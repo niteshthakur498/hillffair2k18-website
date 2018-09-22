@@ -9,7 +9,6 @@ var app = express();
 //use method for static files
 app.use(express.static(__dirname));
 
-
 //Connecting to mongodb loaclhost database
 mongoose.connect(process.env.MONGODB_URI||"mongodb://localhost:27017/hillffair" ,{ useNewUrlParser: true });
 //Using Body parser for middleware
@@ -34,6 +33,14 @@ app.get('/',function (req,res){
 app.get('/team',function (req,res){
   console.log("okay");
   res.sendFile(__dirname+"/team.html");
+});
+app.get('/lookback',function (req,res){
+  console.log("okay");
+  res.sendFile(__dirname+"/lookback.html");
+});
+app.get('/sponsors',function (req,res){
+  console.log("okay");
+  res.sendFile(__dirname+"/sponsors.html");
 });
 //Post Method
 app.post('/adduser',function(req, res){

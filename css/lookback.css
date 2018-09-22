@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+.section{
+    overflow: hidden;
+}
+.section:nth-child(1) {
+    background: red;
+}
+.section:nth-child(2) {
+    background: blue;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+
+.slide1{
+    background-image: url('../images/lookback/bg1.jpg');
+}
+.slide2{
+    background-image: url('../images/lookback/bg2.jpg');
+}
+.slide3{
+    background-image: url('../images/lookback/bg3.jpg');
+}
+.slide4{
+    background-image: url('../images/lookback/bg4.jpg');
+}
+
+
+
+.heading {
+    position: absolute;
+    right: 5%;
+    top: 15%;
+    font-size: 8rem;
+    z-index: 3;
+    letter-spacing: .5rem;
+    font-weight: 700;
+    color: black;
+    z-index: 4;
+
+
+}
+
+.tag-line {
+    position: absolute;
+    right: 4%;
+    top: 40%;
+    font-size: 4rem;
+    z-index: 100;
+    letter-spacing: .5rem;
+    font-weight: 700;
+    color: black;
+    z-index: 4;
+}
+
+.content-clip-str {
+    background: rgba(240,240,240,0.7);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: -13rem;
+    font-size: 2rem;
+    transform: skewX(-10deg);
+    display: inline-block;
+    color: black;
+    z-index: 3;
+    width: 40%;
+    box-shadow: -1rem 0 3rem 0 black;
+}
+
+.back-str {
+    background: rgba(240,240,240,0.3);
+    position: absolute;
+    top:0;
+    height: 100%;
+    right: -38rem;
+    font-size: 2rem;
+    transform: skewX(38deg);
+    z-index: 2;
+    width: 40%;
+    box-shadow: -1rem 0rem 3rem 0 black;
+}
+
+/*.content-clip-rev {
+    background: #eee;
+    position: absolute;
+    top:0;
+    height: 100%;
+    right: -13rem;
+    font-size: 2rem;
+    transform: skewX(75deg);
+    display: inline-block;
+    color: black;
+   z-index: 3;
+   width: 40%;
+    box-shadow: -1rem 0 6rem black;
+}*/
+.content-text{
+    position: absolute;
+    top: 65%;
+    padding: 0 10rem 0 2.5rem;
+}
+@media only screen and (max-width: 1200px) {
+    .heading {
+        font-size: 5rem;
+    }
+    .content {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .heading {
+        font-size: 5rem;
+    }
+
+    .img-container {
+        width: 70%;
+        height: 60%;
+    }
+    .content {
+      font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .heading {
+        font-size: 5rem;
+    }
+    .content {
+      font-size: 1rem;
+    }
+}
+
+.fp-slidesNav {
+    left: 50% !important;
+}
+.fp-next , .fp-prev{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .heading {
+        position: absolute;
+        letter-spacing: .5rem;
+        font-weight: 700;
+        color: black;
+        font-size: 3em;
+        z-index: 4;
+        left:50%;
+        transform: translateX(-50%);
+        text-align: center;
+        top: 5%;
+    }
+    .tag-line {
+        position: absolute;
+        letter-spacing: .2rem;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+        z-index: 4;
+        top: unset;
+        right: unset;
+        font-size: 2em;
+        top: 14%;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .container {
+        width: 100%;
+        height: 35%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: auto;
+    }
+    .content-clip-str {
+        background: rgba(240,240,240,0.7);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 32.5%;
+        right: unset;
+        font-size: 1.3rem;
+        transform: skewX(0deg);
+        z-index: 3;
+        width: 100%;
+        box-shadow: -1rem 0 3rem 0 black;
+        top: unset;
+    }
+    .content-text{
+        position: static;
+        padding: 2em 2em;
+    }
+    .back-str {
+        display: none;
+    }
+}

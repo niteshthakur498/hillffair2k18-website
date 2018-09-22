@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Look Back</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" intital-scale="1.0">
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
+	<link rel="stylesheet" type="text/css" href="css/lookback.css">
+
+	
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section"></div>
+		
+
+		<div class="section">
+			<h1 class="heading">asdfgh</h1>
+			<h2 class="tag-line">-sddfafaasddfafafa</h2>
+			<div class="slide ">
+				<div class="container slide1"></div>
+			</div>
+			<div class="slide ">
+				<div class="container slide2"></div>
+			</div>
+			<div class="slide ">
+				<div class="container slide3"></div>
+			</div>
+			<div class="slide ">
+				<div class="container slide4"></div>
+			</div>
+			<div class="back-str"></div>
+			<div class="content-clip-str">
+				<div class="content-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</div>
+
+			</div>
+		</div>
+
+		<div class="section">
+			<h1 class="heading">asdfgh</h1>
+			<h2 class="tag-line">-sddfafaasddfafafa</h2>
+			<div class="slide ">
+				<div class="container slide1"></div>
+			</div>
+			<div class="slide ">
+				<div class="container slide2"></div>
+			</div>
+			<div class="slide ">
+				<div class="container slide3"></div>
+			</div>
+			<div class="slide ">
+				<div class="container slide4"></div>
+			</div>
+			<div class="back-str"></div>
+			<div class="content-clip-str">
+				<div class="content-text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.extensions.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+	$('#fullpage').fullpage({
+		autoScrolling:true,
+		scrollHorizontally: true,
+		licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"
+	});
+	var startSlideSections = function() {
+    setInterval(function () {
+      $.fn.fullpage.moveSlideRight();
+    }, 1500);
+};
+
+startSlideSections();
+});
+	</script>
+</body>
+</html>
