@@ -53,20 +53,15 @@
 	width: 40px;
 	height: 80px;
 	margin: -25px 0 0 0;
-	background-color: rgba(81, 4, 171,0.5);
+	background-color: transparent;
 	color: #fff;
 	font-family: inherit;
 	font-weight: bold;
 	border: none;
 	cursor: pointer;
 	transition: all 0s linear;
-	font-size: 3em;
+	font-size: 4.7em;
 	font-weight: bolder;
-}
-
-.pieces-slider__button:hover {
-	background: #5f3abf;
-	font-size: 3.5em;
 }
 
 .pieces-slider__button--next {

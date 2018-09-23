@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Look Back</title>
+	<title>LookBack</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" intital-scale="1.0">
 	<link rel="stylesheet" type="text/css" href="css/fullpage.css">
 	<link rel="stylesheet" type="text/css" href="css/lookback.css">
-
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	
 </head>
 <body>
-	<div id="fullpage">
-		<div class="section"></div>
-		
+	<div class="menu__header">
+		<div class="burger">
+	    <div class="burger__patty"></div>
+	    <div class="burger__patty"></div>
+	    <div class="burger__patty"></div>
+	  </div>
 
+	  <nav class="menu">
+	    <div class="menu__brand">
+	      <a href="/"><img class="logo" src="images/logo2k17.png"></a>
+	    </div>
+	    <ul class="menu__list">
+	      <li class="menu__item"><a href="/" class="menu__link">Home</a></li>
+	      <li class="menu__item"><a href="/lookback" class="menu__link">Lookback</a></li>
+	      <li class="menu__item"><a href="register"  target="_blank"  class="menu__link">Register</a></li>
+	      <li class="menu__item">
+	        <a href="events" class="menu__link">
+	        	Events
+	        </a>
+	      </li>
+	      <li class="menu__item">
+	        <a href="team" class="menu__link">
+	         	Team
+	          </a>
+	      </li>
+	      <li class="menu__item">
+	        <a href="sponsors" class="menu__link">
+	         	Sponsors
+	          </a>
+	      </li>
+	    </ul>
+	  </nav>
+	</div>
+	<div id="fullpage">
 		<div class="section">
-			<h1 class="heading">asdfgh</h1>
-			<h2 class="tag-line">-sddfafaasddfafafa</h2>
+			<div class="lookback-heading">
+				<h1>Hillffair 2k'18</h1>
+				<h2>Halcyon Hues</h2>
+				<h3>Canvas Painted with Memories</h3>
+			</div>
+		</div>
+		<div class="section">
+			<h1 class="heading">Inceptio</h1>
+			<h2 class="tag-line">Rediscovering our Roots</h2>
 			<div class="slide ">
 				<div class="container slide1"></div>
 			</div>
@@ -37,7 +74,6 @@
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 					consequat.
 				</div>
-
 			</div>
 		</div>
 
@@ -70,27 +106,10 @@
 
 
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/fullpage.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.2/fullpage.extensions.min.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 	$('#fullpage').fullpage({

@@ -6,22 +6,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/team.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 </head>
 <body>
+	<div class="menu__header">
+		<div class="burger">
+	    <div class="burger__patty"></div>
+	    <div class="burger__patty"></div>
+	    <div class="burger__patty"></div>
+	  </div>
+
+	  <nav class="menu">
+	    <div class="menu__brand">
+	      <a href="/"><img class="logo" src="images/logo2k17.png"></a>
+	    </div>
+	    <ul class="menu__list">
+	      <li class="menu__item"><a href="/" class="menu__link">Home</a></li>
+	      <li class="menu__item"><a href="/lookback" class="menu__link">Lookback</a></li>
+	      <li class="menu__item"><a href="register"  target="_blank"  class="menu__link">Register</a></li>
+	      <li class="menu__item">
+	        <a href="events" class="menu__link">
+	        	Events
+	        </a>
+	      </li>
+	      <li class="menu__item">
+	        <a href="team" class="menu__link">
+	         	Team
+	          </a>
+	      </li>
+	      <li class="menu__item">
+	        <a href="sponsors" class="menu__link">
+	         	Sponsors
+	          </a>
+	      </li>
+	    </ul>
+	  </nav>
+	</div>
 	<div class="container">
 		<div class="heading">Faculty Coordinators</div>
 		<div class="group">
 			<div class="user">
-                <div class="userImage">
-                    <img src="images/team/pic.jpg">
-                </div>
+                <img class="userImage" src="images/team/pic.jpg">
+                <div class="userName">
+                    <h1>Name Name</h1>
+                </div> 
                 <div class="userData">
-                    <h1 class="userName">Name Name</h1>
-                    <h2 class="userPost">Director</h2>
-                    <h3 class="userContact">1234567890</h3>
-                </div>      
+                	<div class="Adata">
+                		<p class="name">Name Name</p>
+                		<p class="des">Faculty<br>1234567890</p>
+                	</div>
+                </div>     
+            </div>
+            <div class="user">
+                <img class="userImage" src="images/team/pic.jpg">
+                <div class="userName">
+                    <h1>Name Name</h1>
+                </div> 
+                <div class="userData">
+                	<div class="Adata">
+                		<p class="name">Name Name</p>
+                		<p class="des">Faculty<br>1234567890</p>
+                	</div>
+                </div>     
             </div>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>

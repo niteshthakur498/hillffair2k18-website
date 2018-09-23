@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
 .menu__header {
   position: fixed;
   z-index: 5;
@@ -46,6 +47,9 @@
   top: 0;
   width: 100%;
   visibility: hidden;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .menu--active {
   visibility: visible;
@@ -63,7 +67,6 @@
 .menu__list {
   margin: 0;
   padding: 0;
-  background: #2d9e94;
   list-style-type: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
@@ -74,7 +77,6 @@
           transform: translate3d(0, 0, 0);
 }
 .menu__brand {
-  background: #38C5B9;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
@@ -100,6 +102,7 @@
   font-weight: 700;
   color: white;
   text-decoration: none;
+  font-family: Lato;
   color: white;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -109,15 +112,14 @@
   bottom: 0;
   left: 50%;
   width: 14px;
-  height: 6px;
+  height: 5px;
   background: white;
-  border-radius: 2px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 .menu__link:hover:before {
-  width: 115%;
+  width: 125%;
 }
 .menu .menu__item:nth-child(1) {
   transition-delay: 0.1s;

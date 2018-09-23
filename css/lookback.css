@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@font-face {
+    font-family: 'exmouth';
+    src: /*url("fonts/exmouth/exmouth.otf") format("opentype"), */
+    url("fonts/exmouth/exmouth_.ttf")  format("truetype");
+}
+@font-face {
+    font-family: 'amandaa';
+    src: url("fonts/amandaa/amandaa.otf") format("opentype"), 
+    url("fonts/amandaa/amandaa.ttf")  format("truetype");
+}
 * {
     margin: 0;
     padding: 0;
@@ -19,12 +29,29 @@ body {
     overflow: hidden;
 }
 .section:nth-child(1) {
-    background: red;
+
 }
 .section:nth-child(2) {
     background: blue;
 }
-
+.lookback-heading{
+    text-align: center;
+}
+.lookback-heading h1{
+    font-family: exmouth;
+    font-weight: 550;
+    font-size: 8em;
+}
+.lookback-heading h2{
+    font-family: exmouth;
+    font-weight: 550;
+    font-size: 6em;
+}
+.lookback-heading h3{
+    font-family: exmouth;
+    font-weight: 550;
+    font-size: 4em;
+}
 .container {
     width: 100%;
     height: 100%;
@@ -32,8 +59,6 @@ body {
     background-size: cover;
     margin: auto;
 }
-
-
 .slide1{
     background-image: url('../images/lookback/bg1.jpg');
 }
@@ -87,7 +112,7 @@ body {
     color: black;
     z-index: 3;
     width: 40%;
-    box-shadow: -1rem 0 3rem 0 black;
+    box-shadow: -0.5rem 0 1.5rem 0 black;
 }
 
 .back-str {
@@ -95,7 +120,7 @@ body {
     position: absolute;
     top:0;
     height: 100%;
-    right: -38rem;
+    right: -31.5rem;
     font-size: 2rem;
     transform: skewX(38deg);
     z-index: 2;
@@ -103,20 +128,6 @@ body {
     box-shadow: -1rem 0rem 3rem 0 black;
 }
 
-/*.content-clip-rev {
-    background: #eee;
-    position: absolute;
-    top:0;
-    height: 100%;
-    right: -13rem;
-    font-size: 2rem;
-    transform: skewX(75deg);
-    display: inline-block;
-    color: black;
-   z-index: 3;
-   width: 40%;
-    box-shadow: -1rem 0 6rem black;
-}*/
 .content-text{
     position: absolute;
     top: 65%;
@@ -160,7 +171,7 @@ body {
 .fp-next , .fp-prev{
     display: none;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 708px){
     .heading {
         position: absolute;
         letter-spacing: .5rem;
