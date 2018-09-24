@@ -139,8 +139,15 @@
 .menu .menu__item:nth-child(6) {
   transition-delay: 0.6s;
 }
-
+.menu .logo {
+  width: 200px;
+  height: 200px;
+}
 @media screen and (max-width: 768px) {
+  .burger__patty{
+    height: 3px;
+    width: 25px;
+  }
   ul.menu__list,
   div.menu__brand {
     float: none;
@@ -169,11 +176,11 @@
             transform: translate3d(100%, 0, 0);
   }
   .menu__brand .logo {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
   }
 }
-.menu .logo {
-  width: 200px;
-  height: 200px;
+
+.fp-viewing-0 .burger__patty{
+  background-color: rgba(29, 12, 46,1);
 }

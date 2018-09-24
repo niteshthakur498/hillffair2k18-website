@@ -61,6 +61,111 @@ a{
 	background-size: cover;
 	position: relative;
 }
+.mainView{
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/bg-1.jpg');
+}
+.wLayer{
+	background-color: rgba(255,255,255,0.5);
+	width: 100%;
+	height: 100%;
+}
+.logoImage{
+	width: 430px;
+	height: 430px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: rotateY(0deg) scale(1) translate(-50%,-50%);
+	animation: bounce 1.2s infinite ease;
+}
+.fDates{
+	position: absolute;
+	right: 9px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+	font-family: Josefin Sans;
+	font-size: 1.5em;
+	font-weight: 660;
+	color: rgba(29, 12, 46,1);
+}
+.fDates span{
+	letter-spacing: 6px;
+}
+.nithLogo{
+	width: 7vw;
+	position: absolute;
+	top: 15px;
+	left: 25px;
+}
+.regHome{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 15px 20px 10px;
+	background-color: rgba(29, 12, 46,0.7);
+	border-top-left-radius: 5px;
+	color: #fff;
+	font-family: Josefin Sans;
+	font-size: 2em;
+	letter-spacing: 3px;
+}
+.regHome a{
+	color: #fff;
+}
+.homeLinks{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	z-index: 20;
+}
+.homeLinks a{
+	margin: 10px;
+	font-size: 2em;
+	color:rgba(29, 12, 46,1);
+}
+@media(max-width: 600px){
+	.logoImage{
+		width: 300px;
+		height: 300px;
+	}
+	.regHome{
+		right: unset;
+		left: 50%;
+		transform: translateX(-50%);
+		border-top-right-radius: 5px;
+		padding: 10px 15px 7px;
+		font-size: 1.5em;
+	}
+	.nithLogo{
+		width: 11vw;
+		position: absolute;
+		top: 25px;
+		left: 25px;
+	}
+	.fDates{
+		position: absolute;
+		bottom: 50px;
+		left: 50%;
+		transform: translateX(-50%);
+		top: unset;
+	}
+	.homeLinks{
+		display: none;
+	}
+}
+@media(max-width: 400px){
+	.logoImage{
+		width: 270px;
+		height: 270px;
+	}
+}
+
+
 .content{
 	width: 55%;
     margin: 30px 70px;
@@ -167,43 +272,44 @@ a{
 	font-family: Great Vibes;
 	letter-spacing: 4px;
 	font-size: 5em;
-	font-weight: 550;
-	margin-bottom: 20px;
+	font-weight: 590;
+	margin-bottom: 10px;
+	text-shadow: 1.5px 1.5px 4px #000000;
 }
 .themeContent h2{
 	font-size: 1.75em;
 	font-family: amandaa;
 	font-weight: 555;
+	text-shadow: 1.5px 1.5px 4px #000000;
 }
 .theme p{
 	font-family: Josefin Sans;
-	font-size: 1.2em;
-	line-height: 1.2em;
+	font-size: 1.1em;
+	line-height: 1.1em;
 	font-weight: 400;
 	text-shadow: 1.5px 1.5px 4px #000000;
 }
 .theme{
-	width: 50%;
+	width: 70%;
 	margin: 20px auto;
 }
 @media(max-width: 768px){
 	.theme{
-		width: 80%;
-		margin: 20px auto;
+		width: 90%;
+		margin: 10px auto;
 	}
 	.theme p{
-		font-size: 1em;
-		text-transform: uppercase;
-		line-height: 1.3em;
+		font-size: 14px;
+		line-height: 14px;
 		text-align:justify;
 	}
 	.themeContent h1{
-		letter-spacing: 4px;
-		font-size: 4em;
+		letter-spacing: 2px;
+		font-size: 1.7em;
 		font-weight: 550;
 	}
 	.themeContent h2{
-		font-size: 1.55em;
+		font-size: 1em;
 		text-transform: uppercase;
 	}
 }
@@ -342,9 +448,10 @@ a{
 	width: 200px;
 	height: 200px;
 	z-index: 999;
+	margin-bottom: 20px;
 }
 .followLogoSection h3{
-	font-family: Montserrat;
+	font-family:JoseFin Sans;
 	 font-weight: 700;
 }
 .followLogoSection h3 sup{
@@ -361,6 +468,7 @@ a{
     transition: transform .3s ease,opacity .3s ease;
     bottom: 3px;
     transform: translateX(-50%) rotate(90deg);
+    animation: up 1.2s ease infinite;
 }
 .fp-viewing-4 .arrow{
 	display: none;
@@ -381,4 +489,41 @@ a{
 }*/
 .fa {
 	width: 25px;
+}
+#bgVideo{
+	position: absolute;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 100%;
+}
+
+@keyframes bounce{
+	0%{
+		transform: translate(-50%,-50%) scale(1) rotateY(0deg);
+	}
+	48%{
+		transform: translate(-50%,-50%) scale(1.1);
+	}
+	55%{
+		transform: translate(-50%,-50%) scale(1.1) rotateY(360deg);
+	}
+	100%{
+		transform: translate(-50%,-50%) scale(1);
+	}
+}
+@keyframes up{
+	0%{
+		bottom: 3px;
+	}
+	48%{
+		bottom: 13px;
+	}
+	55%{
+		bottom: 13px;
+	}
+	100%{
+		bottom: 3px;
+	}
 }
