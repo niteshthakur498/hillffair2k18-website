@@ -175,9 +175,10 @@ function validate(form){
                 $("#college").val("");
                 $("#city").val(""); 
                 $('#eventOpt').selectedIndex=-1;
+                $('.confirm').addClass('yes');
                 setTimeout(function(){
                   window.location.reload(1);
-                }, 3000);            
+                }, 2000);            
               }
             }
           }

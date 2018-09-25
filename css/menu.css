@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400');
+@import url('https://fonts.googleapis.com/css?family=Galada');
 .menu__header {
   position: fixed;
   z-index: 5;
   width: 100%;
-  font-family: Montserrat;
+  font-family: 'Galada', cursive;
 }
 
 .burger {
@@ -47,9 +47,6 @@
   top: 0;
   width: 100%;
   visibility: hidden;
-  background: #8E2DE2;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .menu--active {
   visibility: visible;
@@ -60,23 +57,26 @@
   align-items: center;
   justify-content: center;
   float: left;
-  width: 50%;
   height: 100vh;
   overflow: hidden;
 }
 .menu__list {
+  width: 33.33%;
   margin: 0;
   padding: 0;
   list-style-type: none;
   -webkit-transform: translate3d(0, -100%, 0);
           transform: translate3d(0, -100%, 0);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  background-color: #9f4db1;
 }
 .menu__list--active {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 .menu__brand {
+    width: 66.67%;
+  background-color: #642171;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   -webkit-transform: translate3d(0, 100%, 0);
           transform: translate3d(0, 100%, 0);
@@ -99,10 +99,10 @@
   position: relative;
   font-size: 30px;
   padding: 15px 0;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
   text-decoration: none;
-  font-family: Lato;
+  font-family: 'Galada', cursive;
   color: white;
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -111,8 +111,9 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 14px;
-  height: 5px;
+  width: 7px;
+  height: 3px;
+  border-radius: 3px;
   background: white;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -140,8 +141,8 @@
   transition-delay: 0.6s;
 }
 .menu .logo {
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
 }
 @media screen and (max-width: 768px) {
   .burger__patty{

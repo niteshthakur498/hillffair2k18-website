@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:400');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nothing+You+Could+Do');
 @font-face {
     font-family: 'exmouth';
     src: /*url("fonts/exmouth/exmouth.otf") format("opentype"), */
@@ -29,7 +34,8 @@ body {
     overflow: hidden;
 }
 .section:nth-child(1) {
-
+    background-image: url(../images/canvas.jpg);
+    background-size: cover;
 }
 .section:nth-child(2) {
     background: blue;
@@ -38,19 +44,22 @@ body {
     text-align: center;
 }
 .lookback-heading h1{
-    font-family: exmouth;
+    font-family: Great Vibes;
     font-weight: 550;
     font-size: 8em;
+    color: #fff;
 }
 .lookback-heading h2{
-    font-family: exmouth;
+    font-family: Josefin Sans;
     font-weight: 550;
     font-size: 6em;
+    color: #fff;
 }
 .lookback-heading h3{
-    font-family: exmouth;
+    font-family: josefin Sans;
     font-weight: 550;
     font-size: 4em;
+    color: #fff;
 }
 .container {
     width: 100%;
