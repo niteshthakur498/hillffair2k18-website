@@ -85,29 +85,39 @@ body {
 
 .heading {
     position: absolute;
-    right: 5%;
-    top: 15%;
+    height: 
+    left: 5%;
+    top: 60%;
     font-size: 8rem;
     z-index: 3;
     letter-spacing: .5rem;
     font-weight: 700;
     color: black;
     z-index: 4;
-
-
+    transition: all .3s;
+    mix-blend-mode: color-dodge;
+    color: red;
 }
 
 .tag-line {
     position: absolute;
-    right: 4%;
-    top: 40%;
+    left: 5%;
+    bottom: 15%;
     font-size: 4rem;
     z-index: 100;
     letter-spacing: .5rem;
     font-weight: 700;
     color: black;
     z-index: 4;
+
 }
+
+/*.heading:hover {
+
+    background-color: rgba(0,0,0,.5);
+    transform: translateY(-3px);
+    text-shadow: 0 5px 4px grey;
+}*/
 
 .content-clip-str {
     background: rgba(240,240,240,0.7);

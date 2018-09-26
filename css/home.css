@@ -54,8 +54,20 @@ a{
 	background-size: cover;
 }
 .section:nth-child(4){
-	background-image: url('../images/fash.jpg') ;	
-	background-size: cover;
+	position: relative;
+	display: block;
+}
+.section:nth-child(4)::after {
+  content: "";
+  background: url('../images/fash.jpg');
+  background-size: cover;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 .section:nth-child(5){
 	background-image: url('../images/bg-last.jpg') ;	
@@ -65,36 +77,60 @@ a{
 .mainView{
 	width: 100%;
 	height: 100%;
-	background-image: url('../images/bg-1.jpg');
-	background-size: cover;
+	text-align: center;
+	background-image: linear-gradient(to right,rgba(89,9,135,0.4), rgba(89,9,135,0.4));
+}
+.bg-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	/* layering */
+	opacity: .5;
+	overflow: hidden; 
+}
+
+.bg-video__content {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	z-index: 100;
+}
+.centerContent{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 .wLayer{
-	background-color: rgba(255,255,255,0.4);
 	width: 100%;
 	height: 100%;
 }
 .logoImage{
-	width: 430px;
-	height: 430px;
-	position: absolute;
-	top:50%;
-	left: 50%;
-	transform: rotateY(0deg) scale(1) translate(-50%,-50%);
-	animation: bounce 1.2s infinite ease;
+	width: 300px;
+	height: 300px;
+	margin-bottom: 15px;
 }
 .fDates{
-	position: absolute;
-	left: 9px;
-	top: 50%;
-	transform: translateY(-50%);
 	color: white;
 	font-family: Josefin Sans;
 	font-size: 1.5em;
 	font-weight: 660;
 	color: rgba(29, 12, 46,1);
+	margin-bottom: 15px;
 }
 .fDates span{
 	letter-spacing: 6px;
+}
+.fTagline{
+	color: white;
+	font-family: Josefin Sans;
+	font-size: 1.5em;
+	font-weight: 660;
+	color: rgba(29, 12, 46,1);
+	margin-bottom: 15px;
 }
 .nithLogo{
 	width: 7vw;
@@ -102,17 +138,17 @@ a{
 	top: 15px;
 	left: 25px;
 }
-.regHome{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	padding: 15px 20px 10px;
+.regHome{ 
+	padding: 12px 7px 3px;
+	width: 80%;
 	background-color: rgba(29, 12, 46,0.7);
-	border-top-left-radius: 5px;
+	border-radius: 5px;
 	color: #fff;
 	font-family: Josefin Sans;
-	font-size: 2em;
+	font-size: 1.7em;
 	letter-spacing: 3px;
+	padding-bottom: 15px;
+	margin: 0 auto;
 }
 .regHome a{
 	color: #fff;
@@ -136,10 +172,6 @@ a{
 		height: 300px;
 	}
 	.regHome{
-		right: unset;
-		left: 50%;
-		transform: translateX(-50%);
-		border-top-right-radius: 5px;
 		padding: 10px 15px 7px;
 		font-size: 1.5em;
 	}
@@ -149,12 +181,11 @@ a{
 		top: 25px;
 		left: 25px;
 	}
+	.fTagline{
+		font-size: 1.2em;
+	}
 	.fDates{
-		position: absolute;
-		bottom: 50px;
-		left: 50%;
-		transform: translateX(-50%);
-		top: unset;
+	
 	}
 	.homeLinks{
 		display: none;
@@ -466,8 +497,8 @@ a{
 	position: fixed;
     left: 50%;
     z-index: 3;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     transition: transform .3s ease,opacity .3s ease;
     bottom: 3px;
     transform: translateX(-50%) rotate(90deg);
@@ -476,11 +507,11 @@ a{
 .fp-viewing-4 .arrow{
 	display: none;
 }
-/*.mat{
-	width: 56%;
-	height: 70%;
+.mat{
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	background-color: #fff;
+	background-image: linear-gradient(to right,rgba(89,9,135,0.6), rgba(89,9,135,0.3	));
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
@@ -489,7 +520,7 @@ a{
 	.mat{
 		display: none;
 	}
-}*/
+}
 .fa {
 	width: 25px;
 }
