@@ -81,7 +81,9 @@ a{
 	width: 100%;
 	height: 100%;
 	text-align: center;
-	background-image: linear-gradient(to right,rgba(89,921,255,0.2), rgba(89,921,255,0.2));
+/*	background: linear-gradient(to bottom, rgba(113,89,179,0.55) 0%, rgba(41,26,92,0.55) 83%, rgba(41,26,92,0.55) 100%);
+*/
+background: linear-gradient(to bottom, rgba(188,178,215,0.5) 0%, rgba(70,46,148,0.5) 55%, rgba(26,14,66,0.4) 93%, rgba(26,14,66,0.75) 100%);
 }
 .bg-video {
 	position: absolute;
@@ -157,6 +159,9 @@ a{
 .regHome a{
 	color: #fff;
 }
+.regHome:hover{
+	animation: pulse 0.7s ease forwards;
+}
 .homeLinks{
 	display: flex;
 	flex-direction: column;
@@ -186,7 +191,7 @@ a{
 		left: 25px;
 	}
 	.fTagline{
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 	.fDates{
 	
@@ -314,15 +319,15 @@ a{
 	text-shadow: 1.5px 1.5px 4px #000000;
 }
 .themeContent h2{
-	font-size: 1.75em;
+	font-size: 1.95em;
 	font-family: 'Nothing You Could Do', cursive;
 	font-weight: 555;
 	text-shadow: 1.5px 1.5px 4px #000000;
 }
 .theme p{
 	font-family: Josefin Sans;
-	font-size: 1.1em;
-	line-height: 1.1em;
+	font-size: 1.3em;
+	line-height: 1.3em;
 	font-weight: 400;
 	text-shadow: 1.5px 1.5px 4px #000000;
 }
@@ -336,17 +341,17 @@ a{
 		margin: 10px auto;
 	}
 	.theme p{
-		font-size: 14px;
-		line-height: 14px;
+		font-size: 1.1em;
+		line-height: 1.1em;
 		text-align:justify;
 	}
 	.themeContent h1{
 		letter-spacing: 2px;
-		font-size: 1.7em;
+		font-size: 3em;
 		font-weight: 550;
 	}
 	.themeContent h2{
-		font-size: 1em;
+		font-size: 1.2em;
 		text-transform: uppercase;
 	}
 }
@@ -428,10 +433,13 @@ a{
 	font-size: 1.2em;
 	margin-bottom: 7px;
 	color: rgba(250, 250, 250);
-	text-transform: uppercase;
 	line-height: 1.5em;
 	vertical-align: middle;
 	border-radius: 3px;
+	font-family: Josefin Sans;
+}
+.followMenu a:hover{
+	animation: tada 0.8s ease forwards;
 }
 .followMenuLinks , .followLinks{
 	display: flex;
@@ -560,4 +568,48 @@ a{
 	100%{
 		bottom: 3px;
 	}
+}
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0%{
+  	transform: scale(1);
+  }
+  50%{
+  	transform: scale(1.1);
+  }
+  100%{
+  	transform: scale(1);
+  }
 }
