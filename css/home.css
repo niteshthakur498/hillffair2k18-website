@@ -50,7 +50,7 @@ a{
 	background-size: cover;
 }
 .section:nth-child(3){
-	background-image: url('../images/bg-100.jpg') ;	
+	background-image: linear-gradient(to right,rgba(89,9,135,0.4), rgba(89,9,135,0.4)),url('../images/bg-100.jpg') ;	
 	background-size: cover;
 }
 .section:nth-child(4){
