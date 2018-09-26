@@ -24,6 +24,9 @@ body {
 	height: 100%;
 	text-align: center;
  	font-family: Carson, 'Trebuchet MS', sans-serif;
+ 	background-image: url(../images/teambg.jpg);
+ 	background-size: cover;
+ 	background-attachment: fixed;
 }
 ul{
 	list-style: none;
@@ -38,7 +41,6 @@ a{
 	width: 100%;
 	display: block;
 	text-align:center;
-	background-color: #fff;
 /*	background-image: url('../images/skyCandle.jpg');*/
 	background-size: cover;
 	background-attachment: fixed;
@@ -46,11 +48,14 @@ a{
 	background-size: contain;
 	color: #fff;*/
 	padding: 5% 0% 5%;
+	background-image: linear-gradient(to right,rgba(89,9,135,0.6), rgba(89,9,135,0.3	));
 }
 .heading{
 	font-size: 3em;
 	font-family: Great Vibes;
-	color: #000;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 2px;
 }
 
 .group{
@@ -103,8 +108,8 @@ a{
 }
 
 .ch-info .ch-info-front {
-
 	background-size: cover;
+	background-position: center;
 }
 
 .ch-info .ch-info-back {
