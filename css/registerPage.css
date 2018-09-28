@@ -125,8 +125,10 @@ a{
 	font-weight: 700;
 	letter-spacing: -0.5px;
 	line-height: 29.25px;
-	text-transform: uppercase;
 	margin-bottom: 10px;
+}
+#tagline{
+	font-family: Josefin Sans;
 }
 .hillffairDate{
 	font-family: Montserrat;

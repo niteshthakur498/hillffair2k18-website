@@ -12,7 +12,7 @@
 }
 
 html {
-    font-size: 5px;
+    font-size: 7px;
 }
 
 html, body {
@@ -158,7 +158,9 @@ transform: rotateY(180deg);
 
 .card__picture--1 {
 	background-image: linear-gradient(to right,rgba(89,9,135,0.6), rgba(89,9,135,0.3	));
-background-image: linear-gradient(to right,rgba(89,9,135,0.6), rgba(89,9,135,0.3	)), url(../images/drama.jpeg); 
+background-image: linear-gradient(to right,rgba(89,9,135,0.6), rgba(89,9,135,0.3	)), url(../images/logo2k17.png); 
+background-position: center;
+background-size: cover;
 }
 
 .card__picture--2 {
