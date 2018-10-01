@@ -71,7 +71,7 @@ h2{
 }
 .Coming{
 	position: absolute;
-	top: 50%;
+	top: 57%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	font-size: 6em;
@@ -79,4 +79,11 @@ h2{
 }
 .burger__patty{
 	background-color: rgba(29, 12, 46,1);
+}
+
+.spon {
+	width: 300px;
+	height: auto;
+	object-fit: cover;
+	margin: 40px;
 }
