@@ -276,11 +276,11 @@ select{
     background: transparent;
     border-radius: 4px;
 }
-#selectEvent{
+/*#selectEvent{
 	top: -1.3rem;
   -moz-top:-1.3rem;
   font-size: 0.8rem;
-}
+}*/
 option{
 	color: black;
 	border-bottom: 1px solid #000;

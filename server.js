@@ -60,6 +60,6 @@ app.post('/adduser',function(req, res){
 });
 
 // Listening to port-number
-app.listen(8080,function(){
-    console.log("localhost at 8080");
+app.listen(3000,function(){
+    console.log("localhost at 3000");
 });

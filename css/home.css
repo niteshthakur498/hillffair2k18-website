@@ -636,3 +636,13 @@ background: linear-gradient(to bottom, rgba(188,178,215,0.5) 0%, rgba(70,46,148,
 button{
 	outline: none;
 }
+#gpIcon{
+	width: 150px;
+
+}
+@media(max-width: 768px){
+	#gpIcon{
+		width: 120px;
+		height: 40px;
+	}
+}
