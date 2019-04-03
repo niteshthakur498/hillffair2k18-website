@@ -16,5 +16,5 @@ It's homepage where details of fest, introduction of Hillffair and gallery of pr
 ## Registration
 Here, you can see registration of students in events and they get notified about the registration.
 <p align="center">
-<img src="Images/h4.png" width="80%">
+<img src="Images/hi4.png" width="80%">
 </p>
