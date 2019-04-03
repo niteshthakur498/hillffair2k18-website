@@ -13,6 +13,10 @@ It's homepage where details of fest, introduction of Hillffair and gallery of pr
 <img  src="Images/hi2.png" width="80%">
 </p>
 
+##
+<p align="center">
+<img  src="Images/hi3.png" width="80%">
+</p>
 ## Registration
 Here, you can see registration of students in events and they get notified about the registration.
 <p align="center">
